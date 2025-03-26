@@ -1,0 +1,16 @@
+{
+    "C_Cpp.intelliSenseEngine": "default",
+    "idf.espIdfPath": "/Users/juergen/esp/master/esp-idf",
+    "idf.toolsPath": "/Users/juergen/Documents/Espressiv",
+    "idf.pythonInstallPath": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "idf.port": "/dev/tty.usbmodem14401",
+    "idf.customExtraVars": {
+        "OPENOCD_SCRIPTS": "/Users/juergen/esp/tools/openocd-esp32/v0.10.0-esp32-20211111/openocd-esp32/share/openocd/scripts",
+        "IDF_TARGET": "esp32s3"
+    },
+    "idf.openOcdConfigs": [
+        "interface/ftdi/esp_ftdi.cfg",
+        "target/esp32s3.cfg"
+    ],
+    "idf.flashType": "UART"
+}
