@@ -29,18 +29,16 @@
 uint16_t FRAMblock = 21; // block
 
 // Output printf
-static void print_buf(uint8_t *buf, int len)
+static void print_buf(uint8_t *buf, int len) // len ist die Länge des Buffers
 {
     int i;
-    for (i = 0; i < len; i++)
-    {
-        printf("%02x ", buf[i]);
-        if ((i + 1) % FRAMblock == 0)
-        {
-            printf("\n");
+    for (i = 0; i < len; i++) {
+        printf("%02x ", buf[i]); // Darstellung des Inhalt von buf (Hexadezimal 2Stellen)
+        if ((i + 1) % FRAMblock == 0) { // Blockgröße für die Ausgabe
+            printf("\n"); // Zeilenende
         }
-        printf("\n");
     }
+    printf("\n"); //Blockende
 }
 
     void app_main(void)
