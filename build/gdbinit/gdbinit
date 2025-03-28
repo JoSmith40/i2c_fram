@@ -1,0 +1,2 @@
+source /Users/juergen/ESP-IDF/Projects/i2c_fram/build/gdbinit/symbols
+source /Users/juergen/ESP-IDF/Projects/i2c_fram/build/gdbinit/connect
