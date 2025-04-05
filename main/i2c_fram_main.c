@@ -23,7 +23,6 @@
 #define MASTER_FREQUENCY CONFIG_I2C_MASTER_FREQUENCY
 #define PORT_NUMBER -1 // Standard Kanal im ESP32 für i2c
 #define LENGTH 1024
-
 #define FRAM_I2C_ADDR 0x50
 #define FRAM_ADDR 0x0000 // start adress FRAM
 uint16_t FRAMblock = 21; // block
@@ -52,7 +51,6 @@ static void print_buf(uint8_t *buf, int len) // len ist die Länge des Buffers
             .glitch_ignore_cnt = 7, // Glitch
         };
         i2c_master_bus_handle_t bus_handle;
-
         ESP_ERROR_CHECK(i2c_new_master_bus(&i2c_bus_config, &bus_handle));
 
         // Config FRAM
